@@ -23,7 +23,8 @@ make -j20 O=out \
                       STRIP=llvm-strip \
                       CROSS_COMPILE=aarch64-linux-gnu- \
                       CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
-                      CONFIG_SECTION_MISMATCH_WARN_ONLY=y
+                      CONFIG_SECTION_MISMATCH_WARN_ONLY=y \
+                      CONFIG_DRM_PANFROST=y
 }
 function zupload()
 {
